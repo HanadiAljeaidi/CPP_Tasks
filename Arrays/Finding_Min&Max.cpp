@@ -10,13 +10,13 @@ using namespace std;
 
 int main() {
    int num = 0;
-   int maxNum;
-   int minNum;
+   int maxNum = 0;
+   int minNum = 100;
    int sum;
    float average;
    
    for(int i=0; i<15; i++){
-       cout<<"Enter a number between 0 to 100";
+       cout<<"Enter a number between 0 to 100 \n";
        cin>>num;
        sum = sum + num;
        
@@ -32,7 +32,6 @@ int main() {
             minNum = num;
         }
    }
-   
    average = sum / 15;
    
    cout<<"Maximum number = "<<maxNum<<"\n";
