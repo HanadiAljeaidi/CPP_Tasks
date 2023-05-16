@@ -31,7 +31,7 @@ int main()
             
             std::cin>>guess;
             std::cout<<guess<<"\n";
-        } else
+        } else {
             std::cout<<"The guessed number is right!";
         }
     
