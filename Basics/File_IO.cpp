@@ -21,7 +21,7 @@ int main () {
     string line;
     //create an output stream to write to the file
     //append the new lines to the end of the file
-    ofstream myfileI ("input.txt", ios::app);
+    ofstream myfileI ("File_IO_input.txt", ios::app);
     if (myfileI.is_open())
     {
         myfileI << "\nI am adding a line.\n";
@@ -31,7 +31,7 @@ int main () {
     else cout << "Unable to open file for writing";
   
     //create an input stream to write to the file
-    ifstream myfileO ("input.txt");
+    ifstream myfileO ("File_IO_input.txt");
     if (myfileO.is_open())
     {
         while ( getline (myfileO,line) )
@@ -45,3 +45,34 @@ int main () {
     
     return 0;
 }
+
+
+/*For Using Input files with integer values
+#include <iostream>
+#include <fstream>
+#include <string>
+
+int main() {
+    std::ifstream inputFile("input.txt"); // Replace "input.txt" with your file path
+
+    if (!inputFile) {
+        std::cerr << "Failed to open the input file." << std::endl;
+        return 1;
+    }
+
+    int totalSum = 0;
+    int num;
+    while (inputFile >> num) {
+        totalSum += num;
+    }
+
+    inputFile.close(); // Close the input file
+
+    std::cout << "Total sum of numbers: " << totalSum << std::endl;
+
+    return 0;
+}
+
+
+
+*/
