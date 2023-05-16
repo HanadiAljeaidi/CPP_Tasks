@@ -16,5 +16,5 @@ int main()
     
 void printMessage() {
         std::cout<<"Functions";
-        std::cout<<"Trying to committing changes using VSCode";
+        // std::cout<<"Trying to committing changes using VSCode"; deleted because it's not needed.
     }
