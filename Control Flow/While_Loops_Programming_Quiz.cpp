@@ -19,7 +19,7 @@ int main()
     while(guess != target){
         
         if(guess < target){
-            std::cout<<"The guessed number is too low. \n";
+            std::cout<<"The guessed number is too low. \n"; 
             std::cout<<"Try again: \n";
             
             std::cin>>guess;
