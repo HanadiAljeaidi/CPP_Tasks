@@ -1,0 +1,5 @@
+32
+64.212
+4.76545
+*
+Hey look at me! I know pointers!
