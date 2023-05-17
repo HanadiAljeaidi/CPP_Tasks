@@ -1,22 +1,38 @@
-/*Goal: practice writing functions with parameters and return values.*/
+/*Put your functions here. 
+**The grader will use this file to check your work. 
+*/
 
-#include "main.hpp"
+#include<iostream>
 
-void printEquation(int m1, int m2, char operation);
+void printEquation(int m1, int m2, int sum, char operation);
 
-int main(){
+int sum(int m1, int m2);
+
+
+void printEquation(int m1, int m2,int sum, char operation){
+    switch(operation){
+        case '+' :{
+            return m1 + m2;
+            break;
+        }
+        case '-' :{
+            return m1 - m2;
+            break;
+        }
+        case '*' :{
+            return m1 * m2;
+            break;
+        }
+        case '/' :{
+            return m1 / m2;
+            break;
+        }
+        
+    }
     
-    int m1 = 2;
-    int m2 = 3;
-    int total = sum(m1, m2);
-    
-    printEquation(m1, m2, total, '+');
-    // printEquation(m1,m2,total,'-');
-    // printEqaution(m1, m2, total, '*');
-    // printEquation(m1, m2, total, '/');
-
-    return 0;
-    
+    std::cout<<m1<<" "<<operation<<" "<<m2<<" = "<<sum;
 }
 
-void printEquation(int m1), int m2, 
+int sum(int m1, int m2){
+    return m1 + m2;
+}
