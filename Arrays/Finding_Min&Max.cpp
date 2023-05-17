@@ -5,38 +5,39 @@
 **HINT: you will need to use scanf for input text.
 */
 
-#include <iostream> 
+
+#include <iostream>
 using namespace std;
 
 int main() {
-   int num = 0;
-   int maxNum = 0;
-   int minNum = 100;
-   int sum;
-   float average;
-   
-   for(int i=0; i<15; i++){
-       cout<<"Enter a number between 0 to 100 \n";
-       cin>>num;
-       sum = sum + num;
-       
-    // to find min and max
+    int num = 0;
+    int MinNum = 100;
+    int MaxNum = 0;
+    int sum;
+    float average;
     
-        if(num > maxNum)
-        {
-            maxNum = num;
+    
+    for(int i = 0; i < 15; i++){
+        cout<<"Enter a number between 0 and 100: ";
+        scanf("%d", &num);
+        cout<<num<<"\n";
+        sum += num;
+        
+        if(num > MaxNum){
+            MaxNum = num;
         }
         
-        if(num < minNum)
-        {
-            minNum = num;
+        if(num < MinNum){
+            MinNum = num;
         }
-   }
-   average = sum / 15;
-   
-   cout<<"Maximum number = "<<maxNum<<"\n";
-   cout<<"Minimum number = "<<minNum<<"\n";
-   cout<<"Sum = "<< sum<<"\n";
-   cout<<"The average = "<<average<<"\n";
-   
+    }
+    
+    
+    cout<<"Minimum number = "<<MinNum<<"\n";
+    cout<<"Maximum number = "<<MaxNum<<"\n";
+    
+    // cout<<sum<<"\n";
+    average = sum / 15;
+    cout<<"Average = "<<average<<"\n";
+    
 }
