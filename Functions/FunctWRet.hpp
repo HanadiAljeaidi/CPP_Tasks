@@ -4,29 +4,29 @@
 
 #include<iostream>
 
-void printEquation(int m1, int m2, int sum, char operation);
+int printEquation(int m1, int m2, int total, char operation);
 
 int sum(int m1, int m2);
 
 
-void printEquation(int m1, int m2,int sum, char operation){
+int printEquation(int m1, int m2,int total, char operation){
     switch(operation){
-        case '+' :{
+        case '+' :
             return m1 + m2;
             break;
-        }
-        case '-' :{
+        
+        case '-' :
             return m1 - m2;
             break;
-        }
-        case '*' :{
+        
+        case '*' :
             return m1 * m2;
             break;
-        }
-        case '/' :{
+        
+        case '/' :
             return m1 / m2;
             break;
-        }
+        
         
     }
     

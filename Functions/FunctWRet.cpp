@@ -1,8 +1,6 @@
 /*Goal: practice writing functions with parameters and return values.*/
 
-#include "main.hpp"
-
-void printEquation(int m1, int m2, char operation);
+#include "FunctWRet.hpp"
 
 int main(){
     
@@ -19,4 +17,3 @@ int main(){
     
 }
 
-void printEquation(int m1), int m2, 
