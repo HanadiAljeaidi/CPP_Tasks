@@ -25,10 +25,38 @@ Gameboard::Gameboard(){
     
 }
 
+void Gameboard::setGameSpace(int row, int column, char value){
+    gameSpace[row][column] = value;
+}
+
+char Gameboard::getGameSpace(int row, int column){
+    return gameSpace[row][column];
+}
+
+int Gameboard::fourInRow(){
+    int count = 0;
+    for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 4; j++){
+            if(gameSpace[i][j] == 'x'){
+                count++;
+            }
+        }
+        
+        if(count = 4){
+            return 1;
+        }
+        
+    }
+    return 0;
+}
+
+
 void Gameboard::printInfo(){
     for(int i = 0; i < 4; i++){
         for(int j = 0; j < 4; j++){
-            cout<<gameSpace[i][j]<<"\n";
+            cout<<gameSpace[i][j]<<" ";
         }
+        cout<<"\n";
     }
 }
+
