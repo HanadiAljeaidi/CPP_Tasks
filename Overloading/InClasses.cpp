@@ -1,7 +1,7 @@
 /*Goal: look at a program, and see if we can make it more versatile
 **Modify the compare class in main.hpp to include the 
 **additional function members.*/
-#include "main.hpp"
+#include "InClasses.hpp"
 
 int main()
 {
