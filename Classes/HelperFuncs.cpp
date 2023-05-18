@@ -1,6 +1,6 @@
 /*Goal: look at helper functions in classes*/
 
-#include "main.hpp"
+#include "HelperFuncs.hpp"
 
 int main()
 {
